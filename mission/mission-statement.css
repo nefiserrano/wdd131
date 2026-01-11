@@ -1,0 +1,57 @@
+body {
+    display: flex;
+    justify-content: center;
+}
+
+#content {
+    padding: 60px;
+    max-width: 50%;
+    border: 1.5px solid #ccc;
+}
+
+#text {
+    padding: 0 15%;
+}
+
+h1 {
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 2.2rem;
+}
+
+h2 {
+    text-align: center;
+    color: #008db8;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    margin-bottom: 0;
+}
+
+hr {
+    border-top: 1px solid #ddd;
+    margin: 0px auto 40px;
+    width: 70%;
+}
+
+p {
+    line-height: 1.6;
+}
+
+p:nth-of-type(2) {
+    font-style: italic;
+}
+
+ul {
+    list-style-type: decimal;
+}
+
+li {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+img {
+    display: block;
+    width: 20%;
+    margin: 40px auto 0;
+}
