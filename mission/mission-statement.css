@@ -1,4 +1,4 @@
-body {
+#mission {
     display: flex;
     justify-content: center;
 }
@@ -54,4 +54,9 @@ img {
     display: block;
     width: 20%;
     margin: 40px auto 0;
+}
+
+.dark-theme {
+    background-color: #3f3f3f;
+    color: white;
 }
