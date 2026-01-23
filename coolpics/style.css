@@ -38,9 +38,13 @@ footer {
     padding: 1rem;
 }
 
-p {
+button {
     font-size: 20px;
     margin: 0;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    color: white;
 }
 
 main {
@@ -87,7 +91,7 @@ img {
         display: inline;
     }
 
-    p {
+    button {
         display: none;
     }
 }
