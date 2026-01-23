@@ -12,7 +12,8 @@ footer {
   text-align: center;
 }
 
-header, footer {
+header,
+footer {
     background-color: #2b7cd9;
     color: white
 }
@@ -30,7 +31,10 @@ a {
     display: none;
 }
 
-nav a, h1, h2, footer {
+nav a,
+h1,
+h2,
+footer {
     padding: 1rem;
 }
 
