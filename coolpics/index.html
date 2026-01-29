@@ -8,12 +8,13 @@
         <title>Cool Pics</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
         <link rel="stylesheet" href="style.css">
+        <script src="coolpics.js" defer></script>
     </head>
     <body>
         <header>
             <h1>Cool Pics &#128247;</h1>
-            <button>Menu</button>
-            <nav>
+            <button class="menu-btn">Menu</button>
+            <nav class="hide">
                 <a href="#">Home</a>
                 <a href="#">People</a>
                 <a href="#">Places</a>
@@ -23,7 +24,7 @@
         </header>
         <main>
             <h2>Current Work</h2>
-            <section>
+            <section class="gallery">
                 <img src="images/norris-sm.jpg" alt="Norris Image">
                 <img src="images/norris-sm.jpg" alt="Norris Image">
                 <img src="images/norris-sm.jpg" alt="Norris Image">
@@ -34,6 +35,10 @@
                 <img src="images/norris-sm.jpg" alt="Norris Image">
                 <img src="images/norris-sm.jpg" alt="Norris Image">
             </section>
+            <dialog>
+                <img>
+                <button class="close-viewer">X</button>
+            </dialog>
         </main>
         <footer>
             @2026 Not a real site 🟡
