@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Credit card information form for online purchases.">
+    <meta name="author" content="Nefi Raul Serrano Ramirez">
+    <title>Credit Card Form</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="creditcard.css">
+    <script src="creditcard.js" defer></script>
+</head>
+<body>
+    <main>
+        <form>
+            <section class="card-face front">
+                <p class="total">TOTAL: $199</p>
+                <P class="chip-icon">💳</P>
+                <div class="field-number">
+                    <label for="cardNumber">CARD NUMBER</label>
+                    <input type="text" id="cardNumber" name="cardNumber" placeholder="1234 1234 1234 1234" pattern="(\d{4} ){3}\d{4}" required>
+                </div>
+                <div class="field-group">
+                    <label for="cardHolder">CARD HOLDER</label>
+                    <input type="text" id="cardHolder" name="cardHolder" placeholder="John Doe" required>
+                </div>
+                <div class="cardExpiration">
+                    <label for="expirationDate">EXPIRATION</label>
+                    <div class="exp-inputs">
+                        <input type='text' id='month' name="expMonth" placeholder="MM" maxlength="2" aria-labelledby="expirationDate" required>
+                        <input type='text' id='year' name="expYear" placeholder="YY" maxlength="2" aria-labelledby="expirationDate" required>
+                    </div>
+                </div>
+            </section>
+            <section class="card-face back">
+                <div class="magnetic-strip"></div>
+                <div class="cvc-group">
+                    <label for="cvc">CVC/CVV</label>
+                    <input type="text" id="cvc" name="cvc" placeholder="xxx" maxlength="3" pattern="\d{3}" required>
+                </div>
+            </section>
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+        <section class="errors"></section>
+    </main>
+</body>
+</html>
