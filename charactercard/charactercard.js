@@ -16,8 +16,12 @@ const characterCard = {
     }
 };
 
-document.querySelector('.image').setAttribute('src', characterCard.image);
-document.querySelector('.image').setAttribute('alt', characterCard.name);
+const img = document.createElement('img');
+document.querySelector('.card').prepend(img);
+img.setAttribute('class', 'image');
+img.setAttribute('src', characterCard.image);
+img.setAttribute('alt', characterCard.name);
+
 document.querySelector('.name').textContent = characterCard.name;
 document.querySelector('#class').innerHTML = `<strong>Class:</strong> ${characterCard.class}`;
 document.querySelector('#level').innerHTML = `<strong>Level:</strong> ${characterCard.level}`;
