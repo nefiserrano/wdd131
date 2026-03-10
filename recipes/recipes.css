@@ -77,10 +77,15 @@ article {
     display: flex;
     flex-direction: column;
     margin-top: 20px;
+}
+
+.recipe-card {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
     padding: 20px;
     border: 2px solid #333;
-    border-radius: 5px;
-    gap: 5px;
+    border-radius: 10px;
 }
 
 article img {
@@ -95,6 +100,10 @@ article img {
     width: fit-content;
     margin: 0;
     border-radius: 2px;
+}
+
+.recipe-tags {
+    display: flex;
 }
 
 h2 {
@@ -126,7 +135,7 @@ footer {
 }
 
 @media (min-width: 700px) {
-    article {
+    .recipe-card {
         flex-direction: row;
         gap: 25px;
     }
