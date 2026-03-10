@@ -301,12 +301,12 @@ function search() {
     let sortedRecipes = filterRecipes.sort(compareRecipes)
 
     function compareRecipes(a,b) {
-    if (a.name.toLowerCase() < b.name.toLowerCase()) {
-        return -1;
-    } else if (a.name.toLowerCase() > b.name.toLowerCase()) {
-        return 1;
-    }
-    return 0;
+        if (a.name.toLowerCase() < b.name.toLowerCase()) {
+            return -1;
+        } else if (a.name.toLowerCase() > b.name.toLowerCase()) {
+            return 1;
+        }
+        return 0;
     }
 
     recipeContainer.innerHTML = '';
@@ -324,21 +324,21 @@ function tagTemplate(tags) {
 }
 
 function ratingTemplate(rating) {
-		let html = `<span
+	let html = `<span
 	class="rating"
 	role="img"
 	aria-label="Rating: ${rating} out of 5 stars"
->   `
+    >`
     for (let i = 1; i <= 5; i++) {
-      if (i <= rating) {
-        html += `<span aria-hidden="true" class="icon-star">⭐</span>`
-      } else {
+        if (i <= rating) {
+            html += `<span aria-hidden="true" class="icon-star">⭐</span>`
+        } else {
         html += `<span aria-hidden="true" class="icon-star-empty">☆</span>`
-      }			
+        }			
     }
     html += `</span>`
     return html
-  }
+}
 
 function recipesTemplate(recipe) {
     return `<div class="recipe-card">
