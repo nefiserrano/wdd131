@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+		<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="A site plan for a website about personal finance.">
+        <meta name="author" content="Nefi Raul Serrano Ramirez">
+		<title>Site Plan</title>
+		<link type="text/css" rel="stylesheet" href="styles/site-plan.css">
+	</head>
+	<body>
+		<header>
+			<h1>Financial Tracker Site Plan</h1>
+			<h2>Nefi Raul Serrano Ramirez</h2>
+			<h2>WDD 131.A2</h2>
+			<!-- In the header above, add the name or your site, your name and class number. For example if you are in section 3 you would put WDD 131.03 -->
+		</header>
+		<main>
+			<hr>
+			<h2>Overview</h2>
+			<h3>Purpose</h3>
+			<p>The goal is to provide users with a real-time, visual representation of
+                their spending habits to encourage better financial habits. the application
+                calculates running totals and updates the interface instantly without
+                requiring a page refresh.
+            </p>
+			<!-- change this -->
+
+			<h3>Audience</h3>
+			<p>This project is designed for students who needs a tool to track daily
+                micro-expenses, such as groceries or subscriptions. It is ideal for someone
+                looking to quickly log a purchase while on the go.
+            </p>
+			<!-- change this -->
+
+			<h3>Dynamic elements</h3>
+			<p>JavaScript listens for user interactions, such as clicking “Add” or “Filter”,
+                to update the interface without requiring a page reload. It captures and
+                stores input data, then uses a render function to dynamically generate and
+                insert HTML elements (such as list items and buttons) into the page using
+                template literals. This enables the interface to instantly recalculate the
+                total balance through an updateTotal function and show or hide expenses
+                based on selected filter criteria, ensuring the display always reflects
+                the current data. Conditional logic is used to enhance visual feedback;
+                for example, if the total balance exceeds the budget, it is displayed in
+                red, otherwise in green. Each expense is represented as an object containing
+                related properties such as amount and category, while all expenses are
+                stored in an array. This structure allows for efficient data management
+                and iteration, using array methods like filter and reduce to calculate totals
+                and refine displayed results.
+            </p>
+			<!-- change this -->
+
+			<hr>
+			<h2>Branding</h2>
+			<h3>Website Logo</h3>
+			<!-- Replace this with some sort of logo for your site.  A logo can be as simple as the name of your site in a nice font :) -->
+			<img src="logo.png" alt="Logo image">
+			<hr>
+			<h2>Style Guide</h2>
+
+			<h3>Color Palette</h3>
+			<!--  The colors you choose for a website are one of the most important decisions you will make. Follow the instructions on the activity in iLearn then return and replace the color codes below with the hex color codes (the 6 digit numbers that show at the bottom of each color) for the colors you have chosen below. You should have at least 2 colors but do not have to fill in all 4 if you do not need them.  -->
+
+			<!-- Copy and paste the URL to your finished palette below Make sure to paste it into both spots -->
+			Palette URL:
+			<a
+				href="https://coolors.co/00a86b-1e3a8a-f8fafc-334155-ef4444"
+				target="_blank"
+				>https://coolors.co/00a86b-1e3a8a-f8fafc-334155-ef4444</a
+			>
+
+			<table class="colors">
+				<tbody>
+					<tr>
+						<th>Primary</th>
+						<th>Secondary</th>
+						<th>Accent 1</th>
+						<th>Accent 2</th>
+                        <th>Accent 3</th>
+					</tr>
+					<!-- Replace the numbers in the boxes below with your hex color codes. Then switch to the site-plan.css file and change your colors there as well. -->
+					<tr>
+						<td class="primary">[#00A86B]</td>
+						<td class="secondary">[#1E3A8A]</td>
+						<td class="accent1">[#F8FAFC]</td>
+						<td class="accent2">[#334155]</td>
+                        <td class="accent3">[#EF4444]</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<h3>Typography</h3>
+			<!-- Choose a font for your paragraphs (body copy) and headlines. What font(s) have you chosen? Why did you choose what you did?  Make sure to review the list of web safe fonts at W3Schools.org as a starting point.  Think also about which of your colors above you might use for background and font colors. -->
+
+			<h4>
+				Heading Font: Georgia (serif)
+				<!-- change this -->
+			</h4>
+			<h4>
+				Paragraph Font: Arial (sans-serif)
+				<!-- change this -->
+			</h4>
+			<h3>Normal paragraph example</h3>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+				veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+				commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+				velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+				occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+				mollit anim id est laborum.
+			</p>
+			<h3>Colored paragraph example</h3>
+			<p class="colored">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+				veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+				commodo consequat.
+			</p>
+
+			<h3>Navigation</h3>
+			<!-- Think about how you want your navigation bar to look. In the site-plan.css file change the colors to your colors to get the look you desire. -->
+			<nav>
+				<a href="#">Home</a>
+				<a href="#">Page2</a>
+				<a href="#">Page3</a>
+			</nav>
+			<hr>
+
+			<h2>Content</h2>
+			<h3>Home page</h3>
+			<p>BudgetFlow Dashboard.<br>
+				Take control of your daily spending with real-time tracking.<br>
+				Current Total: $0.00.
+				Add New Expense
+				Description, Amount and Category.<br>
+				Add to Ledger<br>
+				Recent Transactions<br>
+				Your ledger is currently empty. Start by adding an expense above.<br>
+			</p>
+			<h3>Spending Analysis page</h3>
+			<p>A deeper look at where your money is going.<br>
+				"You are currently within your monthly limit."<br>
+				No expenses to analyze. Add some transactions on the home page to see insights here.<br>
+				Category Name<br>
+				Count of Items
+			</p>
+			<h2>Wireframes</h2>
+			<p>
+				Create two wireframes for your site. One for each page and list them
+				here
+			</p>
+
+			<h3>Home</h3>
+			<p>
+				[Any additional details about home that the wireframe does not make
+				clear]
+			</p>
+			<img src="budgetflow_home_wireframe_sketch.svg" alt="home page wireframe">
+
+			<h3>Spending Analysis</h3>
+			<p>
+				[Any additional details about page 2 that the wireframe does not make
+				clear]
+			</p>
+			<img src="budgetflow_analysis_wireframe_sketch.svg" alt="spending analysis wireframe">
+		</main>
+	</body>
+</html>
