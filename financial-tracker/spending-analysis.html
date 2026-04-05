@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A website for tracking personal finances. Spending analysis page.">
+    <meta name="author" content="Nefi Raul Serrano Ramirez">
+    <title>BudgetFlow — Spending Analysis</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=SN+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/spending-analysis.css">
+    <script src="scripts/spending-analysis.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="logo.png" alt="BudgetFlow logo" class="nav-logo">
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="#">Spending Analysis</a>
+            </div>
+        </nav>
+        <div class="hero">
+            <h1>Spending Analysis</h1>
+            <p>A deeper look at where your money is going.</p>
+            <div>
+                <span class="status-dot"></span>
+                <span id="status">You are currently within your monthly budget.</span>
+            </div>
+        </div>
+    </header> 
+    <main>
+        <div class="stats-row">
+            <div class="stat-card">
+                <div class="stat-label">Total Spent</div>
+                <div class="stat-value">$0.00</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-label">Monthly Budget</div>
+                <div class="stat-value">$500.00</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-label">Remaining</div>
+                <div class="stat-value">$500.00</div>
+            </div>
+        </div>
+        <div class="card">
+            <h2>Spending by Category</h2>
+            <div class="card-body">
+                <div class="empty-state">
+                    No expenses added yet. Start tracking your spending to see insights here.
+                </div>
+                <div id="chart-wrap">
+                    <div class="chart-area"></div>
+                    <div class="chart-x-labels"></div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <h2>Category Breakdown</h2>
+            <div class="card-body">
+                <div class="empty-state">
+                    No expenses to analyze yet.
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Category</th>
+                            <th>Count</th>
+                            <th>Total</th>
+                            <th>% of Budget</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+    <footer>BudgetFlow - WDD 131 - Nefi Raul Serrano Ramirez</footer>
+</body>
+</html>

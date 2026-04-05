@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A website for tracking personal finances. Home page.">
+    <meta name="author" content="Nefi Raul Serrano Ramirez">
+    <title>BudgetFlow — Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=SN+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/index.css">
+    <script src="scripts/index.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="logo.png" alt="BudgetFlow logo" class="nav-logo">
+            <div class="nav-links">
+                <a href="#">Home</a>
+                <a href="spending-analysis.html">Spending Analysis</a>
+            </div>
+        </nav>
+        <div class="hero">
+            <h1>BudgetFlow Dashboard</h1>
+            <p>Take control of your daily spending with real-time tracking.</p>
+            <div class="balance">
+                <span class="balance-label">Current Total:</span>
+                <span class="balance-value">$0.00</span>
+            </div>
+            <div class="budget-bar">
+                <span class="budget-bar-label">Budget: $500</span>
+            </div>
+            <div class="budget-track">
+                <div class="budget-fill"></div>
+            </div>
+            <span class="budget-amount">$0 / $500</span>
+        </div>
+    </header> 
+    <main>
+        <div class="card">
+            <h2>Add New Expense</h2>
+            <div class="card-body">
+                <div class="form-group">
+                    <label for="description">Description</label>
+                    <input type="text" id="description" placeholder="Food, Supplies, etc.">
+                </div>
+                <div class="form-group">
+                    <label for="amount">Amount ($)</label>
+                    <input type="number" id="amount" placeholder="0.00" min="0" step="0.01">
+                </div>
+                <div class="form-group">
+                    <label for="category">Category</label>
+                    <select id="category">
+                        <option value="">Select a category</option>
+                        <option value="Food">Food</option>
+                        <option value="Transportation">Transportation</option>
+                        <option value="Entertainment">Entertainment</option>
+                        <option value="Utilities">Utilities</option>
+                        <option value="Cleaning Supplies">Cleaning Supplies</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                <div class="error-msg" id="error-msg"></div>
+                <button id="add-btn">+ Add Expense to Ledger</button>
+            </div>
+        </div>
+        <div class="card">
+            <h2>Recent Transactions</h2>
+            <div class="card-body">
+                <div id="filter-row">
+                    <button class="filter-btn active">All</button>
+                    <button class="filter-btn">Food</button>
+                    <button class="filter-btn">Transportation</button>
+                    <button class="filter-btn">Entertainment</button>
+                    <button class="filter-btn">Utilities</button>
+                    <button class="filter-btn">Cleaning Supplies</button>
+                    <button class="filter-btn">Other</button>
+                </div>
+                <div class="ledger-empty">
+                    <p>Your ledger is currently empty.</p>
+                    <p>Start by adding your first expense!</p>
+                </div>
+                <ul class="ledger-list"></ul>
+            </div>
+        </div>
+    </main>
+    <footer>BudgetFlow - WDD 131 - Nefi Raul Serrano Ramirez</footer>
+</body>
+</html>
