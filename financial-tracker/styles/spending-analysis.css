@@ -43,15 +43,18 @@ header {
 
 nav {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-between;
     padding: 0 2rem;
     height: 150px;
+    padding: 10px;
 }
 
 .nav-logo {
     height: auto;
-    width: 250px;
+    width: 160px;
+    max-width: 100%;
 }
 
 .nav-links {
@@ -159,7 +162,7 @@ main {
 }
 
 .card-body {
-    padding: 1.2rem;
+    padding: 0.5rem;
 }
 
 .empty-state {
@@ -218,6 +221,7 @@ main {
     text-align: center;
     font-size: 0.75rem;
     color: var(--muted);
+    word-break: break-word;
 }
 
 table {
@@ -237,16 +241,14 @@ thead {
 th {
     text-align: left;
     font-size: 0.75rem;
-    font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.5px;
-    color: var(--muted);
-    padding: 0.75rem 1rem;
+    padding: 0.1rem;
     border-bottom: 2px solid var(--border);
 }
  
 td {
-    padding: 0.75rem 1rem;
+    padding: 0.1rem;
     border-bottom: 1px solid var(--bg);
     color: var(--accent2-color);
 }
@@ -299,20 +301,6 @@ footer {
     color: var(--paragraph-color-on-color);
     background: var(--secondary-color);
 }
-
-@media (max-width: 580px) {
-    .stats-row {
-        grid-template-columns: 1fr;
-    }
- 
-    nav {
-        padding: 0 1rem;
-    }
- 
-    .hero {
-        padding: 1.5rem 1rem;
-    }
-}
  
 @media (min-width: 700px) {
     .hero {
@@ -321,5 +309,14 @@ footer {
 
     .stats-row {
         grid-template-columns: repeat(3, 1fr);
+    }
+
+    nav {
+        flex-direction: row;
+        margin: 0;
+    }
+
+    .nav-logo {
+        width: 250px;
     }
 }
