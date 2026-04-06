@@ -1,14 +1,23 @@
+/*
+    AI Disclaimer:
+    I used AI tools in this assignment as permitted by the assignment instructions.
+    AI was primarily used to assist with structuring the bar chart and category
+    breakdown table in the spending analysis page, debugging issues, and brainstorming
+    solutions to complex problems. All code was written, reviewed, and edited by me.
+    I am fully responsible for the content and functionality of this project.
+*/
+
 * {
     margin: 0;
     padding: 0;
 }
 
 :root {
-    --primary-color: #00A86B;
+    --primary-color: #008353;
     --secondary-color: #1E3A8A;
     --accent1-color: #F8FAFC;
     --accent2-color: #334155;
-    --accent3-color: #EF4444;
+    --accent3-color: #b93636;
   
     --heading-font: "SN Pro", sans-serif;
     --paragraph-font: Arial, Helvetica, sans-serif;

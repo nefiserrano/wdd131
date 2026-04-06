@@ -1,3 +1,12 @@
+/*
+    AI Disclaimer:
+    I used AI tools in this assignment as permitted by the assignment instructions.
+    AI was primarily used to assist with structuring the bar chart and category
+    breakdown table in the spending analysis page, debugging issues, and brainstorming
+    solutions to complex problems. All code was written, reviewed, and edited by me.
+    I am fully responsible for the content and functionality of this project.
+*/
+
 const budget = 500;
 
 const categories = [
@@ -59,6 +68,7 @@ function updateStats(expenses) {
     if (total > budget) {
         statusBanner.classList.add('over');
         statusText.textContent = 'You have exceeded your monthly budget!';
+        statusDot.classList.add('over');
     } else {
         statusBanner.classList.remove('over');
         statusText.textContent = 'You are currently within your monthly budget.';

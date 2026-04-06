@@ -1,14 +1,23 @@
+/*
+    AI Disclaimer:
+    I used AI tools in this assignment as permitted by the assignment instructions.
+    AI was primarily used to assist with structuring the bar chart and category
+    breakdown table in the spending analysis page, debugging issues, and brainstorming
+    solutions to complex problems. All code was written, reviewed, and edited by me.
+    I am fully responsible for the content and functionality of this project.
+*/
+
 * {
     margin: 0;
     padding: 0;
 }
 
 :root {
-    --primary-color: #00A86B;
+    --primary-color: #008353;
     --secondary-color: #1E3A8A;
     --accent1-color: #F8FAFC;
     --accent2-color: #334155;
-    --accent3-color: #EF4444;
+    --accent3-color: #b93636;
   
     --heading-font: "SN Pro", sans-serif;
     --paragraph-font: Arial, Helvetica, sans-serif;
@@ -99,9 +108,8 @@ h1 {
 }
 
 .hero div.over {
-    border-color: rgba(239, 68, 68, 0.4);
-    background: rgba(239, 68, 68, 0.15);
-    color: #FCA5A5;
+    border-color: var(--accent3-color);
+    color: var(--accent3-color);
 }
 
 .status-dot {
@@ -109,6 +117,10 @@ h1 {
     height: 8px;
     border-radius: 50%;
     background: var(--primary-color);
+}
+
+.status-dot.over {
+    background: var(--accent3-color);
 }
 
 main {
@@ -182,7 +194,7 @@ main {
     gap: 1rem;
     height: 160px;
     padding: 0 0.5rem;
-    border-bottom: 2px solid var(--border);
+    border-bottom: 2px solid black;
     margin-bottom: 0.75rem;
 }
  
@@ -197,76 +209,49 @@ main {
 }
  
 .bar-amount {
-    font-size: 0.72rem;
-    color: var(--muted);
-    font-weight: 700;
+    font-size: 0.8rem;
+    font-weight: bold;
 }
  
 .bar {
     width: 100%;
     max-width: 64px;
     border-radius: 5px 5px 0 0;
-    transition: height 0.4s ease;
-    min-height: 4px;
 }
- 
+
 .chart-x-labels {
     display: flex;
     gap: 1rem;
     padding: 0 0.5rem;
 }
- 
+
 .chart-x-labels span {
     flex: 1;
     text-align: center;
-    font-size: 0.75rem;
-    color: var(--muted);
+    font-size: 0.8rem;
     word-break: break-word;
 }
 
 table {
     width: 100%;
-    border-collapse: collapse;
-    background: var(--white);
-    border: 1px solid var(--border);
-    border-radius: 12px;
-    overflow: hidden;
-    font-size: 0.875rem;
+    font-size: 0.8rem;
 }
- 
-thead {
-    background: var(--accent1-color);
-}
- 
+
 th {
     text-align: left;
-    font-size: 0.75rem;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
+    font-size: 0.8rem;
     padding: 0.1rem;
-    border-bottom: 2px solid var(--border);
 }
- 
+
 td {
     padding: 0.1rem;
-    border-bottom: 1px solid var(--bg);
-    color: var(--accent2-color);
 }
- 
-tbody tr:last-child td {
-    border-bottom: none;
-}
- 
-tbody tr:hover td {
-    background: var(--accent1-color);
-}
- 
+
 .cat-badge {
     display: inline-block;
-    font-size: 0.72rem;
-    padding: 3px 10px;
+    font-size: 0.8rem;
+    padding: 2px 8px;
     border-radius: 10px;
-    font-weight: 600;
 }
  
 .pct-bar-wrap {
@@ -285,13 +270,11 @@ tbody tr:hover td {
  
 .pct-fill {
     height: 100%;
-    border-radius: 3px;
+    border-radius: 4px;
 }
  
 .pct-label {
-    font-size: 0.75rem;
-    color: var(--muted);
-    white-space: nowrap;
+    font-size: 0.8rem;
 }
  
 footer {
